@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="line1">
+        <form>
+          <label class="lab">DAY</label>
+          <input type="number" class="input-box" id="day" placeholder="DD" />
+          <small class="error-day"></small>
+          <span class="error1" id="errorMessage1">Please enter a valid Date</span>
+        </form>
+        <form>
+          <label class="lab">MONTH</label>
+          <input type="number" class="input-box" id="month" placeholder="MM" />
+          <small class="error-month"></small>
+          <span class="error2" id="errorMessage2">Please enter a valid Month</span>
+        </form>
+        <form>
+          <label class="lab">YEAR</label>
+          <input type="number" class="input-box" id="year" placeholder="YYYY" />
+          <small class="error-year"></small>
+          <span class="error3" id="errorMessage3">Please enter a valid Year</span>
+        </form>
+      </div>
+      <div class="line2">
+        <hr class="hr" />
+        <button class="svg" type="button" id="calculate" onclick="calculateAge()">
+          <img src="./image/icon-arrow.svg"alt="logo">
+        </button>
+      </div>
+      <div class="results" id="result">
+        <h1><span class="result-year"> --</span>years</h1>
+        <h1><span class="result-month"> --</span>months</h1>
+        <h1><span class="result-day"> --</span>days</h1>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <footer>
+        <p><B>&COPY; This was created by the amazing Marvell69 and Ayodbuilder</B></p>
+    </footer>
+  </body>
+</html>
