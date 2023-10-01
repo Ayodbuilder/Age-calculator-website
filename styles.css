@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+  }
+  body {
+    margin: auto;
+    max-width: 550px;
+    background-color: hsl(0, 0%, 94%);
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 2.5rem;
+    border-bottom-right-radius: 10rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+  }
+  .lab {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.59);
+  }
+  input::placeholder {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 10px;
+  }
+  .line1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .input-box {
+    margin-top: 0.6rem;
+    /* padding: 0.7rem 0; */
+    width: 7rem;
+    height: 3rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.338);
+    cursor: pointer;
+  }
+  
+  .line2 {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  hr {
+    width: 100%;
+    height: 0.1px;
+    background-color: rgba(0, 0, 0, 0);
+    /* justify-content: center; */
+  }
+  .svg {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 40px;
+    padding: 15px;
+    border: none;
+  }
+  .svg:hover {
+    cursor: pointer;
+    background-color: black;
+  }
+  .results {
+    font-family: "Poppins", sans-serif;
+    font-weight: 5rem;
+    font-size: 2.7rem;
+  }
+  span {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 5px;
+  }
+  
+  .error1{
+   color: red;
+   font-size: xx-small;
+   display: none;
+  }
+  
+  .error2{
+    color: red;
+    font-size: xx-small;
+    display: none;
+  }
+  
+  .error3{
+    color: red;
+    font-size: xx-small;
+    display: none;
+  }
+
+  footer{
+    margin-top: 0.9rem;
+    font-family: "Poppins"
+  }
+  
+
+
+  @media only screen and (max-width: 500px) {
+    body {
+      margin: 10px;
+    }
+    .line2 {
+      flex-direction: column;
+    }
+    .svg {
+      position: absolute;
+    }
+    hr {
+      margin-top: 2rem;
+    }
+    .input-box {
+      width: 4.5rem;
+    }
+    .results {
+      margin-top: 3rem;
+      font-size: 2rem;
+    }
+  }
+  
